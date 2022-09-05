@@ -1,0 +1,42 @@
+.weeks {
+  background-color: salmon;
+  width: 20%;
+}
+
+
+.weeks:nth-child(1n) {
+  background-color: lightcoral;
+  text-align: left;
+  padding-left: 8px;
+}
+.weeks:nth-last-child(1) {
+  background-color: lightcoral;
+  text-align: right;
+  padding-left: 8px;
+}
+
+.table {
+  background-color: antiquewhite;
+  width: 100%;
+  padding: 16px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.button {
+  padding: 1rem;
+  background-color: azure;
+  border: 1px solid lightblue;
+  cursor: pointer;
+}
+.row {
+  background-color: lightsteelblue;
+}
