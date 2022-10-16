@@ -1,42 +1,45 @@
-.weeks {
-  background-color: salmon;
-  width: 20%;
-}
-
-
-.weeks:nth-child(1n) {
-  background-color: lightcoral;
-  text-align: left;
-  padding-left: 8px;
-}
-.weeks:nth-last-child(1) {
-  background-color: lightcoral;
-  text-align: right;
-  padding-left: 8px;
-}
-
-.table {
-  background-color: antiquewhite;
-  width: 100%;
-  padding: 16px;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .button {
-  padding: 1rem;
-  background-color: azure;
-  border: 1px solid lightblue;
-  cursor: pointer;
+    padding: 1rem;
+    background-color: azure;
+    border: 1px solid lightblue;
+    cursor: pointer;
 }
-.row {
-  background-color: lightsteelblue;
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.block-row {
+    margin: 1rem;
+    background-color: lavender;
+    padding: 1rem;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px lightblue solid;
+    width: 100px;
+
+}
+
+.field {
+    background-color: black;
+    border-radius: 2px;
+    width: 10px;
+    height: 10px;
 }
