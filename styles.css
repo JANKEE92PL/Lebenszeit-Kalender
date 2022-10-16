@@ -36,12 +36,11 @@ h1 {
     width: 20px;
     height: 20px;
 }
-
 .markers-block {
     width: 80%;
 }
 
-.markers-first {
+.markers-first{
     display: flex;
     justify-content: space-between;
 }
