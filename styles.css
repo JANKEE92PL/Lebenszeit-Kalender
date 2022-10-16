@@ -31,11 +31,16 @@ h1 {
 }
 
 .field {
-    background-color: black;
+    border: 1px solid black;
     border-radius: 2px;
     width: 20px;
     height: 20px;
 }
+.filled {
+    background-color: black;
+
+}
+
 .markers-block {
     width: 80%;
 }
