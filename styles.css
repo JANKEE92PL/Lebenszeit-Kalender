@@ -36,6 +36,7 @@ h1 {
     width: 20px;
     height: 20px;
 }
+
 .filled {
     background-color: black;
 
@@ -45,11 +46,20 @@ h1 {
     width: 80%;
 }
 
-.markers-first{
+.markers-first {
     display: flex;
     justify-content: space-between;
 }
+
 .markers {
     display: flex;
     justify-content: flex-end;
 }
+
+.datepicker {
+    width: 15%;
+    margin: 1rem 2rem;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+}
+
