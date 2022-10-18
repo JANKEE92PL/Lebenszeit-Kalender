@@ -3,6 +3,11 @@ let weekslived = [];
 
 let blockRow = document.querySelector(".block-row")
 
+let lifetime = document.querySelector(".lifetime")
+let lifetimeYears = document.querySelector(".years")
+let lifetimeWeeks = document.querySelector(".weeks")
+let lifetimeDays = document.querySelector(".days")
+
 /**
  * create a block of 4 Weeks in a Single Iteration
  ** [1 Year contains 13 Blocks]
@@ -20,11 +25,12 @@ const createBlock = () => {
 // let alter = new Date("1999-03-31")
 // let age = prompt("Gebe dein Alter ein >>YYYY-MM-DD<<");
 const datepicker = document.getElementById("datepicker");
-datepicker.addEventListener("input", (e) => {
+datepicker.addEventListener("change", (e) => {
     clearFields()
     const date = new Date(datepicker.value);
     console.info(date.getFullYear())
     createYearBlockRow(date)
+    renderLifeTime()
 })
 
 const clearFields = () => {
@@ -64,3 +70,15 @@ const fillWeeks = (blocks) => {
         })
     }
 };
+
+
+const renderLifeTime = () => {
+    let years = calcLifeTime();
+    lifetimeYears.textContent = years;
+    lifetimeWeeks.textContent = Math.round( years *52)
+    lifetimeDays.textContent =  Math.round( years *365)
+}
+const calcLifeTime = () => {
+    let rowIndex = document.querySelectorAll(".block").length
+    return rowIndex / 13
+}
